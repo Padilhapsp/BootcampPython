@@ -80,6 +80,3 @@ def test_quando_listar_tarefas_a_tarefa_retornada_deve_possuir_um_estado():
     resposta = cliente.get("/tarefas")
     assert "estado" in resposta.json().pop()
     TAREFAS.clear()
-
-
-from gerenciador_tarefas.gerenciador import TAREFAS, app
